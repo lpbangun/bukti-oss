@@ -1,0 +1,22 @@
+Bukti
+Copyright (c) 2026 Bukti contributors.
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Both the runnable client (src/bukti/) and the Bukti Protocol specification
+(spec/) ship under the same Apache-2.0 license.
+
+----------------------------------------------------------------------
+
+Third-party attribution
+-----------------------
+
+O*NET Content Model
+
+The Bukti Protocol's seed capability ontology extends the O*NET Content Model
+(https://www.onetcenter.org/content.html), used under the Creative Commons
+Attribution 4.0 International License (CC-BY-4.0). O*NET is a trademark of
+the U.S. Department of Labor, Employment and Training Administration.
+
+Implementations of the Bukti Protocol that use the seed ontology should carry
+attribution to O*NET in their published documentation, as required by CC-BY.
