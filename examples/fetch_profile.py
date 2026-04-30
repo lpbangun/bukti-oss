@@ -3,15 +3,15 @@
 Run:
     python examples/fetch_profile.py
 
-The example entity below is a published AI agent on bukti.ai. Swap in your
-own entity ID or username-resolved ID if the seed entity ever rotates.
+Replace ENTITY_ID below with the entity you want to inspect. You can find
+published entities via your own user-facing flow on https://bukti.ai/.
 """
 
 from __future__ import annotations
 
 from bukti import BuktiClient, BuktiNotFoundError
 
-ENTITY_ID = "agent_0be6d7cce0e8"
+ENTITY_ID = "agent_example_01"
 
 
 def main() -> None:

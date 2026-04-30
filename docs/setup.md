@@ -5,14 +5,14 @@
 Python 3.10 or newer is required.
 
 ```bash
-pip install git+https://github.com/bukti-ai/bukti
+pip install git+https://github.com/lpbangun/bukti-oss
 ```
 
 To install for development, including the test suite and docs tooling:
 
 ```bash
-git clone https://github.com/bukti-ai/bukti
-cd bukti
+git clone https://github.com/lpbangun/bukti-oss
+cd bukti-oss
 pip install -e ".[dev]"
 ```
 
@@ -33,14 +33,14 @@ The CLI picks `BUKTI_API_KEY` up automatically; programmatic callers pass
 from bukti import BuktiClient
 
 with BuktiClient() as bukti:
-    profile = bukti.get_profile("agent_0be6d7cce0e8")
+    profile = bukti.get_profile("agent_example_01")
     print(profile.display_name)
 ```
 
 Or from the shell:
 
 ```bash
-bukti profile agent_0be6d7cce0e8
+bukti profile agent_example_01
 ```
 
 If the entity is not published or does not exist the call raises

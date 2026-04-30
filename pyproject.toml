@@ -45,9 +45,10 @@ bukti = "bukti.cli:main"
 
 [project.urls]
 Homepage = "https://bukti.ai"
-Documentation = "https://github.com/bukti-ai/bukti"
-Issues = "https://github.com/bukti-ai/bukti/issues"
-Specification = "https://github.com/bukti-ai/bukti/tree/main/spec"
+Documentation = "https://docs.bukti.ai"
+Repository = "https://github.com/lpbangun/bukti-oss"
+Issues = "https://github.com/lpbangun/bukti-oss/issues"
+Specification = "https://github.com/lpbangun/bukti-oss/tree/main/spec"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/bukti"]

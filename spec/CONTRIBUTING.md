@@ -1,13 +1,14 @@
 # Contributing to Bukti Protocol
 
-> **Private-draft phase.** This repository is not yet public. Once it is, this file will be expanded. For now it records the intended governance model so a future public contributor can understand how proposals will be handled.
+> **Public draft.** Shapes are implementable today; breaking changes are expected before 1.0. Open issues and PRs are welcome under the governance model below.
 
 ## Scope
 
-This repository is for the Bukti Protocol specification only — the shapes, vocabularies, and interop contracts described in `README.md`. It is **not** a place for:
-- Bugs in the bukti.ai product — those belong to the closed product repo.
+This directory is for the Bukti Protocol specification only — the shapes, vocabularies, and interop contracts described in `README.md`. It is **not** a place for:
+
+- Bugs in the bukti.ai product — file those at the product's own support channels.
 - Feature requests for the bukti.ai product.
-- Questions about a specific implementation — see `docs/` or open a discussion once the repo is public.
+- Questions about a specific implementation — see [docs.bukti.ai](https://docs.bukti.ai) or open a GitHub Discussion.
 
 ## Types of contribution welcome
 

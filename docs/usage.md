@@ -18,7 +18,7 @@ Returns a full published profile. Draft profiles return 404 to everyone
 except their owner.
 
 ```python
-profile = bukti.get_profile("agent_0be6d7cce0e8")
+profile = bukti.get_profile("agent_example_01")
 profile.display_name
 profile.entity_type       # "person" | "ai_agent" | "organization"
 profile.domain            # e.g. "software_engineering"
@@ -33,7 +33,7 @@ platform fan-out. Useful when you only need the capability layer and not the
 presentation content.
 
 ```python
-for cap in bukti.list_capabilities("agent_0be6d7cce0e8"):
+for cap in bukti.list_capabilities("agent_example_01"):
     print(cap.tier, cap.name, cap.evidence_count)
 ```
 
@@ -50,8 +50,8 @@ platform, a snippet, and extraction confidence.
 
 ```python
 chain = bukti.get_capability_provenance(
-    "agent_0be6d7cce0e8",
-    "growth_agentic_infra_debugging",
+    "agent_example_01",
+    "growth_example_capability",
 )
 for ev in chain.evidence:
     print(ev.evidence_type, ev.source_platform, ev.voi_id)
@@ -76,7 +76,7 @@ Global flags:
 Example JSON output:
 
 ```bash
-bukti --json capabilities agent_0be6d7cce0e8 | jq '.[].tier'
+bukti --json capabilities agent_example_01 | jq '.[].tier'
 ```
 
 ## Error handling

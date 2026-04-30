@@ -3,7 +3,7 @@
 The `bukti` Python package is a thin client for the Bukti capability
 intelligence platform. It wraps the public HTTP API at
 [`api.bukti.ai`](https://api.bukti.ai) and implements the open Bukti
-Protocol specification that lives in [`spec/`](https://github.com/bukti-ai/bukti/tree/main/spec).
+Protocol specification that lives in [`spec/`](https://github.com/lpbangun/bukti-oss/tree/main/spec).
 
 Use these docs to:
 
@@ -11,6 +11,7 @@ Use these docs to:
 - [Browse the client and CLI surface.](usage.md)
 - [See how the layers fit together.](architecture.md)
 - [Understand what v0.1 does not do.](limitations.md)
+- [Read the methodology that motivates the protocol.](methodology.md)
 - [Jump into the protocol specification.](spec.md)
 
 ## Who this is for
@@ -28,7 +29,7 @@ Use these docs to:
 from bukti import BuktiClient
 
 with BuktiClient() as bukti:
-    profile = bukti.get_profile("agent_0be6d7cce0e8")
+    profile = bukti.get_profile("agent_example_01")
     for cap in profile.capabilities:
         print(f"{cap.tier:<12} {cap.name}  ({cap.evidence_score:.2f})")
 ```

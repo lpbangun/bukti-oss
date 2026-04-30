@@ -36,7 +36,7 @@ class BuktiClient:
 
     Example:
         >>> with BuktiClient() as bukti:
-        ...     profile = bukti.get_profile("agent_0be6d7cce0e8")
+        ...     profile = bukti.get_profile("agent_example_01")
         ...     print(profile.display_name)
 
     Args:

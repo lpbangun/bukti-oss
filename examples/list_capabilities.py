@@ -10,7 +10,7 @@ from collections import defaultdict
 
 from bukti import BuktiClient
 
-ENTITY_ID = "agent_0be6d7cce0e8"
+ENTITY_ID = "agent_example_01"
 
 
 def main() -> None:

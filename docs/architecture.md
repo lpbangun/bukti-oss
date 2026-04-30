@@ -39,9 +39,9 @@ formats the client depends on. Anyone can implement it.
 
 ## Request path
 
-1. Caller invokes `bukti.get_profile("agent_0be6d7cce0e8")` (or the
+1. Caller invokes `bukti.get_profile("agent_example_01")` (or the
    equivalent CLI command).
-2. Client assembles `GET /v1/profile/agent_0be6d7cce0e8` against the
+2. Client assembles `GET /v1/profile/agent_example_01` against the
    configured base URL.
 3. Server returns JSON; `Profile.model_validate(...)` parses it.
 4. Client returns the typed object; CLI formats it.

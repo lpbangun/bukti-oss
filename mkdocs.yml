@@ -1,8 +1,8 @@
 site_name: Bukti
 site_description: Python client, CLI, and open protocol for capability intelligence.
 site_url: https://bukti.ai
-repo_url: https://github.com/bukti-ai/bukti
-repo_name: bukti-ai/bukti
+repo_url: https://github.com/lpbangun/bukti-oss
+repo_name: lpbangun/bukti-oss
 
 theme:
   name: material
@@ -34,6 +34,7 @@ nav:
   - Usage: usage.md
   - Architecture: architecture.md
   - Limitations: limitations.md
+  - Methodology: methodology.md
   - Specification: spec.md
 
 markdown_extensions:

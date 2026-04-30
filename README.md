@@ -31,7 +31,7 @@ of this repository.
 ## Install
 
 ```bash
-pip install git+https://github.com/bukti-ai/bukti
+pip install git+https://github.com/lpbangun/bukti-oss
 ```
 
 (PyPI publication lands in a later release. Pin to a commit SHA in production
@@ -43,15 +43,15 @@ for now.)
 from bukti import BuktiClient
 
 with BuktiClient() as bukti:
-    profile = bukti.get_profile("agent_0be6d7cce0e8")
+    profile = bukti.get_profile("agent_example_01")
     print(profile.display_name, "-", len(profile.capabilities), "capabilities")
 ```
 
 ## Quickstart — CLI
 
 ```bash
-bukti profile agent_0be6d7cce0e8
-bukti capabilities agent_0be6d7cce0e8
+bukti profile agent_example_01
+bukti capabilities agent_example_01
 ```
 
 ## CLI reference
@@ -123,6 +123,23 @@ capability ontology (O\*NET + domain extensions), and the interop surfaces
 (REST, MCP, A2A, OpenClaw, discovery files). The spec versions and ships
 independently of the client.
 
+## Methodology
+
+The methodology behind the protocol — the two-axis trust model, the evidence
+weight categories, the temporal decay rationale, the cohort-independence
+treatment, the contradiction model, and the public regulatory disclosures —
+is published at **[docs.bukti.ai](https://docs.bukti.ai)**. The protocol in
+this repository is the wire contract; the methodology site explains *why*
+those shapes are what they are.
+
+| Topic | Where |
+|---|---|
+| Two-axis trust model (identity × substantive) | [docs.bukti.ai/methodology/two-axis-model](https://docs.bukti.ai/methodology/two-axis-model/) |
+| Evidence weight categories | [docs.bukti.ai/methodology/evidence-weights](https://docs.bukti.ai/methodology/evidence-weights/) |
+| Identity grade ladder (I0–I4) | [docs.bukti.ai/methodology/identity-grades](https://docs.bukti.ai/methodology/identity-grades/) |
+| What Bukti does *not* verify | [docs.bukti.ai/disclosures/limitations](https://docs.bukti.ai/disclosures/limitations/) |
+| Regulatory posture (EU AI Act, EEOC, FCRA) | [docs.bukti.ai/disclosures/regulatory](https://docs.bukti.ai/disclosures/regulatory/) |
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md). Client changes follow the normal
@@ -136,6 +153,7 @@ ontology extended in `spec/`).
 
 ## Links
 
-- [bukti.ai](https://bukti.ai)
+- Product: [bukti.ai](https://bukti.ai)
+- Methodology: [docs.bukti.ai](https://docs.bukti.ai)
 - Specification: [`spec/`](./spec/)
 - Issues: file them against this repository.

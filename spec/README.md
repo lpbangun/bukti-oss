@@ -1,25 +1,26 @@
-> **Status:** This is the Bukti Protocol specification (v0.1 draft), the open contract that the `bukti` Python client in the parent directory implements. For the runnable client, see the [top-level README](../README.md). The specification stands on its own as an implementation-agnostic standard any third party can implement.
+> **Status:** This is the Bukti Protocol specification (v0.1 draft), the open contract that the `bukti` Python client in the parent directory implements. For the runnable client, see the [top-level README](../README.md). The methodology behind the protocol is published at [docs.bukti.ai](https://docs.bukti.ai). The specification stands on its own as an implementation-agnostic standard any third party can implement.
 
 # Bukti Protocol
 
 **An open specification for evidence-backed capability claims about people, AI agents, and organizations.**
 
-> Status: private working draft · v0.1 in progress · targeting public open-source release
+> Status: public draft · v0.1 · shapes are implementable today, with breaking changes expected before 1.0.
 
 ---
 
-## What this repository is
+## What this is
 
-This repository is the home of the **Bukti Protocol** — the portable, implementation-agnostic specification for how capability evidence can be expressed, aggregated, and exchanged across systems.
+This is the **Bukti Protocol** — the portable, implementation-agnostic specification for how capability evidence can be expressed, aggregated, and exchanged across systems.
 
-It exists because the current state of "professional credibility" on the internet is broken: resumes are self-reported, skills lists are unranked, and AI agents have no way to discover one another by what they can actually do. Bukti (the product at [bukti.ai](https://bukti.ai)) is one implementation of this protocol — a platform that ingests evidence from GitHub, Credly, resumes, and web sources and produces evidence-ranked capability profiles for humans, AI agents, and organizations.
+It exists because the current state of "professional credibility" on the internet is fragmented: resumes are self-reported, skills lists are unranked, and AI agents have no way to discover one another by what they can actually do. Bukti (the product at [bukti.ai](https://bukti.ai)) is one implementation of this protocol — a platform that ingests evidence from public artifacts (repositories, credentials, publications, project links) and produces evidence-ranked capability profiles for humans, AI agents, and organizations.
 
 The protocol itself is not the product. It is the set of shapes, vocabularies, and interop surfaces a third party would need to:
+
 - publish evidence-backed capability profiles that other systems (including LLM agents) can consume,
 - query and verify evidence claims made by any compliant implementation,
-- interoperate with Bukti and other future capability-intelligence platforms on a shared contract.
+- interoperate with Bukti and other capability-intelligence platforms on a shared contract.
 
-This repository will be made public. It is currently private while the specification reaches a reviewable first draft.
+The reasoning behind each design choice — why the tier vocabulary is what it is, why VOIs are immutable, why bi-temporality, what the system explicitly does not verify — is documented at **[docs.bukti.ai](https://docs.bukti.ai)**.
 
 ---
 
@@ -149,13 +150,12 @@ bukti-protocol/
 
 ### Not open-sourced (stays in the closed product)
 
-- Specific numeric evidence weights per evidence type.
-- The exact aggregation formula and its parameters (tier thresholds, independence multipliers, temporal decay half-lives).
-- LLM extraction prompts, QA prompts, model routing logic.
+- The specific aggregation formula a hosted implementation uses, including any numeric weights, thresholds, and decay parameters.
+- LLM extraction, QA, and routing logic.
 - Entity resolution and deduplication heuristics.
-- Pipeline orchestration (LangGraph state machine).
+- Pipeline orchestration.
 - Graph data and user content.
-- The Bukti frontend, CLI, and MCP server implementations (these exist as closed-source reference implementations at [bukti.ai](https://bukti.ai)).
+- The Bukti frontend.
 
 The boundary is: *shapes and vocabularies* are public; *weights, prompts, formulas, and orchestration* are private. A third party implementing the protocol must be able to produce Bukti-compatible output without access to any of the private pieces.
 
@@ -213,6 +213,6 @@ Reference implementations of the protocol — if they are ever extracted from th
 
 ## Maintainers
 
-Single maintainer during private-draft phase. Once public, governance will move to a lightweight process documented in `CONTRIBUTING.md`.
+Single maintainer at the v0.1 stage; governance is documented in [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
-Questions before public release: open a GitHub issue (this repo, once its visibility changes), or see the maintainer's contact on [bukti.ai](https://bukti.ai).
+Questions: open a GitHub issue on this repository, or see the maintainer's contact on [bukti.ai](https://bukti.ai).

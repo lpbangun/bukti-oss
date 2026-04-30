@@ -1,17 +1,17 @@
 # Specification
 
-The Bukti Protocol specification lives in [`spec/`](https://github.com/bukti-ai/bukti/tree/main/spec)
+The Bukti Protocol specification lives in [`spec/`](https://github.com/lpbangun/bukti-oss/tree/main/spec)
 at the root of the repository. This page is a pointer and a summary; the
 specification itself is the normative source.
 
 ## What the spec covers
 
-- **[`spec/README.md`](https://github.com/bukti-ai/bukti/tree/main/spec)** — top-level overview, design principles, cross-reference from spec sections to live `bukti.ai` surfaces, and the in-scope / out-of-scope lists.
-- **[`spec/docs/`](https://github.com/bukti-ai/bukti/tree/main/spec/docs)** — normative specification files (one concern per file: VOI, Entity, Capability, tiers, temporal semantics, REST, MCP, A2A, OpenClaw, discovery files, `skills.md`, `agent.md`, JSON-LD).
-- **[`spec/schemas/`](https://github.com/bukti-ai/bukti/tree/main/spec/schemas)** — machine-readable JSON Schema definitions (`$schema` = draft 2020-12) for every object in the protocol.
-- **[`spec/examples/`](https://github.com/bukti-ai/bukti/tree/main/spec/examples)** — minimal compliant payloads for every object and every interop surface.
-- **[`spec/CONTRIBUTING.md`](https://github.com/bukti-ai/bukti/tree/main/spec/CONTRIBUTING.md)** — governance, style guide, and the list of change types that require discussion before a PR.
-- **[`spec/CHANGELOG.md`](https://github.com/bukti-ai/bukti/tree/main/spec/CHANGELOG.md)** — independent version history for the specification.
+- **[`spec/README.md`](https://github.com/lpbangun/bukti-oss/tree/main/spec)** — top-level overview, design principles, cross-reference from spec sections to live `bukti.ai` surfaces, and the in-scope / out-of-scope lists.
+- **[`spec/docs/`](https://github.com/lpbangun/bukti-oss/tree/main/spec/docs)** — normative specification files (one concern per file: VOI, Entity, Capability, tiers, temporal semantics, REST, MCP, A2A, OpenClaw, discovery files, `skills.md`, `agent.md`, JSON-LD).
+- **[`spec/schemas/`](https://github.com/lpbangun/bukti-oss/tree/main/spec/schemas)** — machine-readable JSON Schema definitions (`$schema` = draft 2020-12) for every object in the protocol.
+- **[`spec/examples/`](https://github.com/lpbangun/bukti-oss/tree/main/spec/examples)** — minimal compliant payloads for every object and every interop surface.
+- **[`spec/CONTRIBUTING.md`](https://github.com/lpbangun/bukti-oss/tree/main/spec/CONTRIBUTING.md)** — governance, style guide, and the list of change types that require discussion before a PR.
+- **[`spec/CHANGELOG.md`](https://github.com/lpbangun/bukti-oss/tree/main/spec/CHANGELOG.md)** — independent version history for the specification.
 
 ## Relationship to this client
 
